@@ -19,7 +19,7 @@ public class CommonFunctions {
 		if (strBrowserName.equalsIgnoreCase("Chrome")) {
 			//Chrome Browser
 			//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver");
 			//System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			// To disable 'Save' password pop-ups
@@ -51,10 +51,9 @@ public class CommonFunctions {
 		driver.manage().window().maximize();
 
 	}
-	
-	public WebDriver getDriver()
-	{
-		return driver;		
+
+	public WebDriver getDriver() {
+		return driver;
 	}
 
 }
