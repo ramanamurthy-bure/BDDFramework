@@ -29,6 +29,7 @@ public class CommonFunctions {
 			options.setExperimentalOption("prefs", prefs);
 			// To disable 'Chrome is being handled by automated software'
 			options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
+			options.setHeadless(true);
 			driver = new ChromeDriver(options);
 		} else if (strBrowserName.equalsIgnoreCase("Firefox")) {
 			// FirefoxDriver
