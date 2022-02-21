@@ -1,5 +1,5 @@
-# CucumberTestNGMaven
-Sample Project with for Web UI Automation with Cucumber TestNG and maven and Masterthought Reporting
+# BDD Framework
+Sample Project for Web UI Automation with Cucumber TestNG and Maven
 
 
 ## Libraries and Frameworks used
