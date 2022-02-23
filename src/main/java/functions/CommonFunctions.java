@@ -19,8 +19,8 @@ public class CommonFunctions {
 		if (strBrowserName.equalsIgnoreCase("Chrome")) {
 			//Chrome Browser
 			//System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver");
-			//System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/drivers/chromedriver");
+			System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			// To disable 'Save' password pop-ups
 			Map<String, Object> prefs = new HashMap<String, Object>();
