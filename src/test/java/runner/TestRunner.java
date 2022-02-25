@@ -9,9 +9,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
-@CucumberOptions(features = "features", glue = { "stepDefs" }, plugin = { "pretty",
+@CucumberOptions(
+		features = "features", glue = { "stepDefs" }, plugin = { "pretty",
 		"html:target/cucumber-reports/cucumber-pretty", "json:target/cucumber-reports/CucumberTestReport.json",
-		"rerun:target/cucumber-reports/rerun.txt" })
+		"rerun:target/cucumber-reports/rerun.txt" },
+		tags= {"@VegPrice"}
+
+		)
 
 public class TestRunner {
 
