@@ -23,14 +23,14 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import functions.CommonFunctions;
 
-public class HomePageSteps {
+public class QAClickJetSteps {
 
 	CommonFunctions cfn = new CommonFunctions();
 	public  WebDriver driver;
 	public String bName = "Chrome";
 
-	@Given("^user navigates to \"([^\"]*)\" site$")
-	public void user_navigates_to_site(String appUrl) throws Throwable {
+	@Given("^user navigates to QAClick site \"([^\"]*)\"$")
+	public void user_navigates_to_QAClick_site(String appUrl) throws Throwable {
 		cfn.LaunchApp(appUrl, bName);
 		driver = cfn.getDriver();
 	}
